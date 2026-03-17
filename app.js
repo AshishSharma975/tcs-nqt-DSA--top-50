@@ -291,3 +291,114 @@ const prompt = require("prompt-sync")();
 //   return rev
 // }
 // console.log(reverseStr("ashish"))
+
+
+
+
+
+
+// 15. Anagram
+// 🧠 Concept
+
+
+// 👉 same letters → different order
+
+// Example:
+// listen = silent ✔
+// "evil" → "vile" ✔️
+
+
+// function Anagram(s1,s2){
+//  let a = s1.split('').sort().join('');
+//  let b = s2.split('').sort().join('');
+
+//  return a === b ? "anagram" : "not anagram"
+ 
+// }
+// console.log(Anagram("listen", "silent"))
+
+
+
+
+// Q16 (Remove Duplicates from String)
+// String diya hai → duplicate characters hatao
+// programming → progamin
+
+// 🧠 Concept (ELI5)
+
+// 👉 Har character ko check karo
+// 👉 Agar pehle aa chuka hai → skip
+// 👉 Naya hai → add karo
+
+
+// 💡 Logic
+// ek empty string result
+// loop chalao
+// agar result me nahi hai → add karo
+
+
+// function removeDuplicate(str){
+//     let result = ""
+
+//     for(let char of str){
+
+//         if(!result.includes(char)){
+//             result += char
+//         }
+//     }
+//       return result;
+
+// }
+// console.log(removeDuplicate("programming"))
+
+
+
+
+
+// Q17 — Second Largest in Array
+
+// ❓ Question
+// [10, 20, 5, 8]
+
+// Output:
+// 10
+
+// 🧠 Concept (ELI5)
+// 👉 Sabse bada alag
+// 👉 dusra sabse bada alag
+
+
+// function secondLargest(arr){
+
+// arr.sort((a,b)=>b-a)
+
+// return arr[1]
+
+// }
+
+// console.log(secondLargest([10,20,5,8]))
+
+
+
+
+
+// Q18 — Linear Search
+
+// ❓ Question
+// Array me element dhundo
+
+// 🧠 Concept
+// 👉 ek ek check karo
+
+
+function LinearSearch(arr,key){
+  for(let num of arr){
+    if(num == key){
+        return "found"
+    }
+  }
+  return "not found"
+
+}
+
+console.log(LinearSearch([1,2,3,4,],10))
