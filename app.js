@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 
-// // check even or odd
+//  1 // check even or odd
 // function checEvenorOdd(n) {
 //   if (n % 2 == 0) {
 //     return "Even";
@@ -11,11 +11,7 @@ const prompt = require("prompt-sync")();
 
 // console.log(checEvenorOdd(4));
 
-
-
-
-
-// // check prime number
+// 2  // check prime number
 
 // function isPrime(n) {
 //   if (n <= 0) {
@@ -36,12 +32,7 @@ const prompt = require("prompt-sync")();
 
 // console.log(isPrime(18));
 
-
-
-
-
-
-// // factorial number
+// 3 // factorial number
 
 // function factorialNum(n) {
 //   let sum = 1;
@@ -52,11 +43,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(factorialNum(2));
 
-
-
-
-
-// fibonaaci series
+// 4 fibonaaci series
 
 // function fibonacci(n) {
 //     let a = 0, b = 1;
@@ -74,8 +61,7 @@ const prompt = require("prompt-sync")();
 
 
 
-
-// reverse a number
+// 5 reverse a number
 
 // function reverseNum(n){
 //     let rev = 0;
@@ -90,32 +76,35 @@ const prompt = require("prompt-sync")();
 
 
 
-//palindrome -
+
+
+// 6 palindrome -
 
 // palindrome means = 121 =>✅
 //                    123 => ❌
-function palindrome(n) {
-  let original = n;
-  let rev = 0;
+// function palindrome(n) {
+//   let original = n;
+//   let rev = 0;
 
-  while (n > 0) {
-    rev = rev * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
+//   while (n > 0) {
+//     rev = rev * 10 + (n % 10);
+//     n = Math.floor(n / 10);
+//   }
 
-  if (original === rev) {
-    return "palindrome";
-  } else {
-    return "not palindrome";
-  }
-}
+//   if (original === rev) {
+//     return "palindrome";
+//   } else {
+//     return "not palindrome";
+//   }
+// }
 
-console.log(palindrome(123));
-
-
+// console.log(palindrome(123));
 
 
-// Armstrong Number - 
+
+
+
+// 7  Armstrong Number -
 
 // 🧠 Concept
 // 👉 Har digit ka cube karke sum karo
@@ -142,7 +131,6 @@ console.log(palindrome(123));
 
 
 
-
 //  8. Sum of Digits
 // 🧠 Concept
 // 👉 Number ke sab digits ko add karna
@@ -161,11 +149,14 @@ console.log(palindrome(123));
 // console.log(sumDigit(123456))
 
 
+
+
+
+
 // 9. Largest of 3 Numbers
 // 🧠 Concept
 
 // 👉 3 numbers me sabse bada kaun?
-
 
 // function Largest(a,b,c,d){
 //  return Math.max(a,b,c,d)
@@ -173,3 +164,130 @@ console.log(palindrome(123));
 // console.log(Largest(10,45,65,86))
 
 
+
+
+// 10. GCD (Greatest Common Divisor)
+// 🧠 Concept
+// 👉 2 numbers ko jo sabse bada number divide kare
+
+// Example:
+// 12, 18
+// common factors: 1,2,3,6 → answer = 6
+
+// function GCD(a,b){
+//   while(b!==0){
+//   let temp = b;
+//   b = a%b;
+//   a = temp
+//   }
+//   return a
+// }
+// console.log(GCD(17,21))
+
+
+
+
+// 11. LCM (Least Common Multiple)
+// 🧠 Concept
+// 👉 smallest number jo dono se divide ho
+
+// Example:
+// 12, 18 → LCM = 36
+
+// 🧠 Easy Logic
+// 👉 Formula:
+// LCM = (a × b) / GCD
+
+// function gcd(a, b) {
+//     while (b !== 0) {
+//         let temp = b;
+//         b = a % b;
+//         a = temp;
+//     }
+//     return a;
+// }
+
+// function lcm(a, b) {
+//     return (a * b) / gcd(a, b);
+// }
+
+// console.log(lcm(12, 18));
+
+
+
+
+// 12. Leap Year
+// 🧠 Concept
+// 👉 February 29 wale saal
+
+// Rule:
+// 4 se divide ✔
+// 100 se divide ❌
+// ya 400 se divide ✔
+
+// 🧠 Easy Logic
+// 👉 Yaad:
+
+// 4 → yes
+// 100 → no
+// 400 → yes
+
+// function isLeapYear(n){
+// if((n%4==0 && n%100 !==0) || (n%400==0)){
+//   return "Leap year"
+// }else{
+//   return "not leap year"
+// }
+// }
+// console.log(isLeapYear(2027))
+
+
+
+
+
+// 13. Count Vowels & Consonants
+// 🧠 Concept
+// 👉 String me:
+
+
+// vowels = a,e,i,o,u
+// consonants = baaki letters
+
+// let s = prompt("enter a string = ");
+// let consonent = 0,
+//     vowels = 0;
+
+// for (let i = 0; i < s.length; i++) {
+//   let ch = s.charAt(i);
+//   switch (ch) {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":  vowels++;
+//      break; 
+//    default:consonent++;
+//   }
+// }
+// console.log(vowels)
+// console.log(consonent)
+
+
+
+
+
+
+// 14. Reverse String
+// 🧠 Concept
+// 👉 string ko ulta karna
+
+
+// function reverseStr(str){
+//   let rev = ""
+
+//   for(let i = str.lenght - 1; i>=0; i--){
+//     rev += str[i]
+//   }
+//   return rev
+// }
+// console.log(reverseStr("ashish"))
