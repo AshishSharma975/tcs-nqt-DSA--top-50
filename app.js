@@ -402,3 +402,17 @@ function LinearSearch(arr,key){
 }
 
 console.log(LinearSearch([1,2,3,4,],10))
+
+
+// Q19 — Binary Search
+
+// ⚠️ Important -
+// 👉 Array sorted hona chahiye
+
+// 💡 Logic -
+// middle nikalo
+// compare karo
+// left ya right jao
+
+
+
