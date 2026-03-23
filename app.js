@@ -282,15 +282,15 @@ const prompt = require("prompt-sync")();
 // 👉 string ko ulta karna
 
 
-// function reverseStr(str){
-//   let rev = ""
+function reverseStr(str){
+  let rev = ""
 
-//   for(let i = str.lenght - 1; i>=0; i--){
-//     rev += str[i]
-//   }
-//   return rev
-// }
-// console.log(reverseStr("ashish"))
+  for(let i = str.lenght - 1; i>=0; i--){
+    rev += str[i]
+  }
+  return rev
+}
+console.log(reverseStr("ashish"))
 
 
 
@@ -337,16 +337,16 @@ const prompt = require("prompt-sync")();
 // agar result me nahi hai → add karo
 
 
-// function removeDuplicate(str){
-//     let result = ""
+function removeDuplicate(str){
+    let result = ""
 
-//     for(let char of str){
+    for(let char of str){
 
-//         if(!result.includes(char)){
-//             result += char
-//         }
-//     }
-//       return result;
+        if(!result.includes(char)){
+            result += char
+        }
+    }
+      return result;
 
 // }
 // console.log(removeDuplicate("programming"))
